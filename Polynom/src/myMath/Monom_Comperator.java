@@ -4,22 +4,17 @@ import java.util.Comparator;
 
 public class Monom_Comperator implements Comparator<Monom> {
 
-	// ******** add your code below *********
 	@Override
 	public int compare(Monom o1, Monom o2) {
-		// TODO Auto-generated method stub
-		if(o1.get_coefficient() == o2.get_coefficient() && o1.get_power() == o2.get_power())
-			return 0;
-		else if(o1.get_power() != o2.get_power())
-			if(o1.get_power() > o2.get_power())
-				return 1;
-			else
-				return -1;
-		else 
-			if(o1.get_coefficient() > o2.get_coefficient())
-				return 1;
-			else
-				return -1;
-	}
+		/**Compare between 2 Monoms at some point
+		 * @return positive number if  the first one is bigger
+		 * @return negative number if the second one is bigger
+		 * @return 0 if equals
+		 */
+		int pow1 = o1.getPower();
+		int pow2 = o2.getPower();
+		return (pow1-pow2);
 
-}
+
+	}
+}	
