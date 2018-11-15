@@ -47,6 +47,8 @@ Addition, subtraction, multiplication. (reference source: https://github.com/ben
 →Methods for advanced operations on polynomial: 
 Calculating the approximated area above X axis below this function, derivative, polynomial’s roots. (reference source:
  https://en.wikipedia.org/wiki/Bisection_method )
+ 
+ -class Graph representing polonomial graph using GRAL GUI, in addition it calculates the area of a given polonomial.
 
 
 
